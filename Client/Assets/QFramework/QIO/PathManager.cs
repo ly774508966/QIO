@@ -13,6 +13,6 @@ public class PathManager : MonoBehaviour {
 
 	public string GetPath(string pathName) {
 		var pathItem = Resources.Load<PathConfig> (pathName);
-		return pathItem.List[0].Path;
+		return pathItem.List[0].FullPath;
 	}
 }
